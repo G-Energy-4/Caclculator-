@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater By Kishan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calc">
+        <h2 style="color: aliceblue; text-align: center; padding: 17px;">
+            Calculater
+        </h2>
+        <tr>
+            <h6
+                style="font-size: small; color: darkgrey; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: right; margin-bottom: 5px;">
+                By ~ Kishan
+            </h6>
+            <form name="form">
+                <input class="calc-display" placeholder="0" minlength="5
+                ">
+            </form>
+            <table>
+
+                <td><input type="button" value="C" onclick="allclr()" style="background-color: red;"></td>
+                <td><input type="button" value="/" onclick="insrt('/')"></td>
+                <td><input type="button" value="<" onclick="del()"></td>
+                <td><input type="button" value="x" onclick="insrt('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="insrt(7)"></td>
+            <td><input type="button" value="8" onclick="insrt(8)"></td>
+            <td><input type="button" value="9" onclick="insrt(9)"></td>
+            <td><input type="button" value="-" onclick="insrt('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="insrt(4)"></td>
+            <td><input type="button" value="5" onclick="insrt(5)"></td>
+            <td><input type="button" value="6" onclick="insrt(6)"></td>
+            <td><input type="button" value="+" onclick="insrt('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="insrt(1)"></td>
+            <td><input type="button" value="2" onclick="insrt(2)"></td>
+            <td><input type="button" value="3" onclick="insrt(3)"></td>
+            <td rowspan="2"><input type="button" value="=" onclick="eql()"
+                    style="height: 158px; background-color: orange;"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="0" onclick="insrt(0)" style="width: 158px;"></td>
+            <td><input type="button" value="." onclick="insrt('.')"></td>
+        </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
